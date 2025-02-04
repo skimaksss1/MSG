@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard 3</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link"><img src="icons/magnifying-glass-chart-solid.svg" alt="" style="margin-right: 5px;">Мониторинг показании</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link"><img src="icons/magnifying-home.svg" alt="" style="margin-right: 5px;">Паспорт объекта</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <img src="icons/gear-solid.svg" alt="">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <img src="icons/right-from-bracket-solid.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="icons/logo.svg">
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-layer-group"></i>
+              <p>
+                Фильтр
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Трещиномеры</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Измеритель осадков</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Тензодатчики</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Наклонометр</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Инклинометр</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Экстензометр</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Пьезометр</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="border-line">
+            <button type="button" class="btn btn-block btn-danger"><i class="far fa-plus-square"></i>Добавить датчик</button>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-circle condition-green"></i>
+              <p>
+                Березовская ГРЭС
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon condition-green"></i>
+                  <p>
+                    Энергоблок №3
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview" style="display: none;">
+                  
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon condition-green"></i>
+                  <p>
+                    Система мониторинга
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview" style="display: none;">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-circle nav-icon condition-green"></i>
+                      <p>
+                        Даталоггер Д1
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview" style="display: none;">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fas fa-circle condition-orange nav-icon"></i>
+                          <p>Мултиплексор М7</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fas fa-circle nav-icon condition-green"></i>
+                          <p>
+                            Мултиплексор М8
+                            <i class="right fas fa-angle-left"></i>
+                          </p>
+                        </a>
+                        <ul class="nav nav-treeview" style="display: none;">
+                          
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <i class="fas fa-circle condition-red nav-icon"></i>
+                              <p>Створ Т2Д18</p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <i class="fas fa-circle nav-icon condition-green"></i>
+                              <p>
+                                Створ Т2Д19
+                                <i class="right fas fa-angle-left"></i>
+                              </p>
+                            </a>
+                            <ul class="nav nav-treeview" style="display: none;">
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  <i class="fas fa-circle nav-icon condition-green"></i>
+                                  <p>
+                                    Тензометр Т5В1
+                                    <i class="right fas fa-angle-left"></i>
+                                  </p>
+                                </a>
+                                <ul class="nav nav-treeview" style="display: none;">
+                                  <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                      <i class="fas fa-circle condition-green nav-icon"></i>
+                                      <p>Температура, °C</p>
+                                    </a>
+                                  </li>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                      <i class="fas fa-circle condition-green nav-icon"></i>
+                                      <p>Частота колебании</p>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <i class="fas fa-circle condition-green nav-icon"></i>
+                              <p>Створ Т2Д20</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fas fa-circle condition-green nav-icon"></i>
+                          <p>Мултиплексор М9</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="fas fa-circle condition-green nav-icon"></i>
+                        <p>Даталоггер Д2</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon condition-green"></i>
+                  <p>Энергоблок №4</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <!-- /.sidebar -->
+
+  </aside>
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Название проекта</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <button type="button" class="btn btn-block btn-msg"><img src="icons/pen-solid.svg" alt="" srcset="" style="margin-right: 5px;">Редактировать</button>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <img class="project_photo" src="img/project_photo.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+                <div class="info-box">
+                  <span class="info-box-icon bg-info project_bg-blue">
+                    <img src="icons/project_info-1.svg" alt="">
+                  </span>
+    
+                  <div class="info-box-content">
+                    <span class="info-box-text">Высота здания</span>
+                    <span class="info-box-number">200 метров</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <div class="info-box">
+                  <span class="info-box-icon bg-info project_bg-green">
+                    <img src="icons/project_info-2.svg" alt="">
+                  </span>
+    
+                  <div class="info-box-content">
+                    <span class="info-box-text">Занимаемая площадь</span>
+                    <span class="info-box-number">100 кв/м</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <div class="info-box">
+                  <span class="info-box-icon bg-info project_bg-red">
+                    <img src="icons/project_info-3.svg" alt="">
+                  </span>
+    
+                  <div class="info-box-content">
+                    <span class="info-box-text">Количество этажей</span>
+                    <span class="info-box-number">30</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.content -->
+  </div>
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+</div>
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+</body>
+</html>
